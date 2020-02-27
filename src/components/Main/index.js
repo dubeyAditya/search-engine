@@ -1,10 +1,12 @@
-import React  from 'react';
-import { MainWrapper } from './styled';
-import { SearchBox } from '../SearchBox';
-export const Main = () => {
-    return (
-        <MainWrapper>
-          <SearchBox resultList={[]}></SearchBox>
-        </MainWrapper>
-    )
+import React from 'react';
+import { MainWrapper,Grid } from './styled';
+import { BookCard } from '../BookCard';
+export const Main = ({userBookList}) => {
+  return (
+    <MainWrapper>
+        <Grid>
+          {userBookList.map((book)=> <BookCard key={book.title} book={book}/>)}
+        </Grid>
+    </MainWrapper>
+  )
 }

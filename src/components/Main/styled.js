@@ -1,4 +1,4 @@
-import styled from  'styled-components';
+import styled from 'styled-components';
 
 export const MainWrapper = styled.main`
   flex:1;
@@ -7,3 +7,20 @@ export const MainWrapper = styled.main`
   overflow-y:scroll;
   background-color: #f2f2f2;
 `
+
+export const Grid = styled.div`
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 1rem;
+
+  @media (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+
+    & > div {
+      margin-bottom: 1rem;
+    }
+  }
+`;
