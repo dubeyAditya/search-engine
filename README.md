@@ -1,5 +1,8 @@
 # Unibuddy Books Search Engine
 
+## Preview without Installation
+https://books-search-engine.now.sh/
+
 ## Installation
 
 Install the dependencies and run application by following commands
